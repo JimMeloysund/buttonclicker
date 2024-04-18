@@ -20,6 +20,7 @@
     display: inline-block;
     font-size: 32px;
     transition: transform 50ms ease-out;
+    touch-action: manipulation;
   }
 
   button:active {
