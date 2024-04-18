@@ -7,8 +7,8 @@
   let timerStarted = false;
   let startTime;
   let elapsedTime = 0;
-  let countdown = 15;
-  const timeleft = 15;
+  let countdown = 30;
+  const timeleft = 30;
   let hasstarted = false;
 
   const handleStart = () => {
