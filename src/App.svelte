@@ -27,7 +27,6 @@
         countdown = Math.max(0, timeleft - Math.floor(elapsedTime / 1000));
         if (countdown === 0) {
           stopTimer();
-          gameOver = true;
         }
       }, 10);
       return timerInterval;
@@ -46,8 +45,9 @@
 <main>
   <h2>Trykk så mange gang du klarer på {timeleft} Sekunder!</h2>
   <h2>{countdown}</h2>
+
   <div on:click={handleStart} class="card">
-    <Counter />
+    <Counter deactivated={countdown <= 0 ? true : false} />
   </div>
 </main>
 

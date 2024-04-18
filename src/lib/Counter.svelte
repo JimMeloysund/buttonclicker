@@ -3,9 +3,11 @@
   const increment = () => {
     count += 1;
   };
+
+  export let deactivated;
 </script>
 
-<button on:click={increment}>
+<button disabled={deactivated} on:click={increment}>
   {count}
 </button>
 
